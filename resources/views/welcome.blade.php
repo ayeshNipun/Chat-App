@@ -7,10 +7,20 @@
 
         <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+         <!-- CSRF Token -->
+         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <!-- Styles -->
+         <!-- Scripts -->
+         <script src="{{ asset('js/app.js') }}" defer></script>
+ 
+         <!-- Fonts -->
+         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+ 
+         <!-- Styles -->
+         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+        <!-- FA -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             html, body {
                 background-color: #fff;
@@ -82,8 +92,9 @@
                     Laravel
                 </div>
 
+
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
+                    <a href="https://laravel.com/docs"><i class="fa fa-car"></i> Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
                     <a href="https://forge.laravel.com">Forge</a>
